@@ -4,7 +4,7 @@ import time
 
 import MetaTrader5 as _mt5
 
-from .BMT5Errors import MT5Error
+from .Errors import MT5Error
 class MT5Wrappers:
     def load_mt5(fn):
         @functools.wraps(fn)

@@ -11,11 +11,11 @@ import time
 import logging
 import sys
 
-from .BMT5Errors import MT5Error
-from .BMT5Global import TIMEFRAME
+from .Errors import MT5Error
+from .Global import TIMEFRAME
 
 import MetaTrader5 as _mt5
-from .BMT5Decorators import MT5Wrappers as w
+from .Decorators import MT5Wrappers as w
 
 class MT5Utils:
     
