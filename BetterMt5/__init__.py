@@ -1,6 +1,3 @@
-import MetaTrader5 as mt5
-from .Utils import MT5Utils
-
-class BetterMt5():
-    def __init__(self) -> None:
-        self.util = MT5Utils()
+import platform
+if platform.system() != "Windows":
+    raise EnvironmentError("BetterMt5 only works on Windows due to MetaTrader5 limitations.")
